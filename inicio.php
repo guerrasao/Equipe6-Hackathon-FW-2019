@@ -2,21 +2,22 @@
 
 include_once "validacao.php";
 $tipoUsuario = $_SESSION['nome_tipo_usuario'];
+var_dump($tipoUsuario);
 switch ($tipoUsuario) {
     case "motorista":
-        header("Location:motorista/index.motorista.php");
+        header("Location:perfis/motorista/index.motorista.php");
         break;
     case "cliente":
-        header("Location:aluno/index.cliente.php");
+        header("Location:perfis/cliente/index.cliente.php");
         break;
     case "operador":
-        header("Location:operador/index.operador.php");
+        header("Location:perfis/operador/index.operador.php");
         break;
     case "gestor":
-        header("Location:gestor/index.gestor.php");
+        header("Location:perfis/gestor/index.gestor.php");
         break;
     case "representante":
-        header("Location:representante/index.representante.php");
+        header("Location:perfis/representante/index.representante.php");
         break;
     default:
         header("Location:login.php");

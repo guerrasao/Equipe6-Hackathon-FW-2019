@@ -12,7 +12,7 @@ if (isset($_SESSION['nome_tipo_usuario'])) {
 function valida($tipoValidacao)
 {
     if (!($_SESSION['nome_tipo_usuario'] == $tipoValidacao)) {
-        header("Location:".$_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019'."/index.php");
+        header("Location:".$_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019'."/inicio.php");
     }
 }
 

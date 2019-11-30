@@ -29,3 +29,5 @@ insert into usuario (
 (null, 3, 1, 'Cora Coralina', 'cora@bakof.com.br', '123', null, null, null, '(55) 12345-6789'),
 (null, 4, 1, 'Regerio Maxinio', 'rogerio@bakof.com.br', '123', null, null, null, '(55) 12345-6789'),
 (null, 5, 1, 'Mikael Santellano', 'mikael@bakof.com.br', '123', null, '60.086.861/0002-11', null, '(55) 12345-6789');
+
+select u.id_usuario, u.nome, tu.nome_tipo_usuario from usuario as u, tipo_usuario as tu where u.id_tipo_usuario = tu.id_tipo_usuario and email='teste@gmail.com' AND senha='123';

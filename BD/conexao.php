@@ -2,7 +2,7 @@
 
 function abrirConexao()
 {
-  $con = mysqli_connect('localhost', 'root', '', 'nomdebd');
+  $con = mysqli_connect('localhost', 'root', '', 'bakof');
 
   if (mysqli_connect_errno()) {
     printf("Connect failed:", mysqli_connect_error());
