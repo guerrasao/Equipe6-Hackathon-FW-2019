@@ -6,6 +6,21 @@
     include_once($cabecalho);
 ?>
 
+
+<section>
+    <div class="container">
+    <div class="row jumbotron bg-white align-items-center test">
+        <div class="col-md-7 mr-5">
+            <h1 class="text-center"> <b>Bem Vindo!</b></h1>
+          <p class="text-justify">Faça o login no sistema para visualizar suas informações e funções</p>
+        </div>
+        <div class="col-md-4">
+            <img src="img/logotransparente.png" class="img-fluid rounded" >
+        </div>
+      </div>
+    </div>
+</section>
+
 <section id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <!-- imagens -->
     <div class="carousel-inner">
@@ -38,21 +53,6 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a> 
-</section>
-
-<section>
-    <div class="container">
-    <div class="row jumbotron bg-white align-items-center">
-        <div class="col-md-7 mr-5">
-            <h1 class="text-center"> Item 1 <b>item 1</b>? </h1>
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos error doloremque at nihil dolor illo sint. Rerum consequatur, odit a dolore adipisci dignissimos eius voluptas sed illum eligendi perspiciatis quos.
-          </p>
-        </div>
-        <div class="col-md-4">
-            <img src="img/logotransparente.png" class="img-fluid rounded" >
-        </div>
-      </div>
-    </div>
 </section>
 
 <section>
