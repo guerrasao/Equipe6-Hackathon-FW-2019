@@ -40,7 +40,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019/perfis/moto
         </div>
       </div>
       <div class="card-body">
-        <p>Tem acesso às rotas, descrição da carga, interface de recebimento com foto do produto, rápido contato com o operador, Principal: Relatório da viagem digitalizado.(rever essa descrição)</p>
+        <p>Tem acesso às rotas, descrição da carga, interface de recebimento com foto do produto, rápido contato com o operador e relatório da viagem digitalizado.</p>
       </div>
       <!-- /.card-body -->
       <div class="card-footer">
