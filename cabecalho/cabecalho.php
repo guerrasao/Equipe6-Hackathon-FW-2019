@@ -23,7 +23,7 @@
           <div class="container">
             <!--Logo -->
             <a href="#" class="navbar-brand">
-                <img src="img/logoLado.png" width="150px" height="auto">
+                <img src="img/logobakof.png" width="150px" height="auto">
             </a>
             <!-- Botão mostrar menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
