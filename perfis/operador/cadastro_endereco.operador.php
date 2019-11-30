@@ -21,11 +21,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/Equipe6-Hackathon-FW-2019/BD/funcoes_
                     <div class="card-body">
                         <input type="hidden" name="tipo_usuario" value="2" />
                         <div class="row">
-                            <div class="col-sm-6">
+                            <!--<div class="col-sm-6">
                                 <div class="form-group">
                                     Descrição do Endereço: <input type="text" class="form-control" name="descricao_endereco" required />
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     CEP: <input type="text" class="form-control" name="cep" id="cep" required />
