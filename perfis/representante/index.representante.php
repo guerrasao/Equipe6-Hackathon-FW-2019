@@ -11,7 +11,7 @@ include_once($cabecalho);
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Titulo</h1>
+            <h1>Seja Bem Vindo</h1>
           </div>
           <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -29,7 +29,7 @@ include_once($cabecalho);
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Title</h3>
+          <h3 class="card-title">Sobre suas permissões</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -39,11 +39,11 @@ include_once($cabecalho);
           </div>
         </div>
         <div class="card-body">
-          Start creating your amazing application!
+          <p>Cadastrar clientes e gerar relatórios.</p>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-          Footer
+        <p>Dúvidas entrar em contato com o Gestor</p>
         </div>
         <!-- /.card-footer-->
       </div>
