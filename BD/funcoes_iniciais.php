@@ -188,7 +188,11 @@ function vetorToString($vetor)
 {
     $string = "";
     foreach ($vetor as $valor) {
-        $string = $string . '\'' . $valor . '\'' . ',';
+        if($valor != null){
+            $string = $string . '\'' . $valor . '\'' . ',';
+        }else{
+            $string = $string . $valor . ',';
+        }
     }
     $string = substr_replace($string, "", -1);
     return $string;
