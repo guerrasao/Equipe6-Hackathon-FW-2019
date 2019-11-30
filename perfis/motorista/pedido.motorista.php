@@ -16,6 +16,11 @@
         <br/>
         <input type="submit" value="Salvar" />
     </form>
+    <form method="post" enctype="multipart/form-data" action="salva_pedido.motorista.php">
+        <input name="assinatura" type="hidden" value="1"/>
+        <br>
+        Entrega Concluída? <input type="submit" value="Assinar"/>
+    </form>
 </section>
 
 <?php
