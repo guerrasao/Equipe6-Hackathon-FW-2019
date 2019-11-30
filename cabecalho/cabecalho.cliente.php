@@ -68,7 +68,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="<?php echo $path;?>/inicio.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class="fas fa-home"></i>
               <p>
                 Início
               </p>
@@ -76,7 +76,7 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/inicio.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fas fa-home"></i></i>
               <p>
                 Início
               </p>
