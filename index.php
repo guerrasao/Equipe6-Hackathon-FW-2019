@@ -9,7 +9,6 @@
 
 <section class="container center">
     <div class=" jumbotron bg-white align-items-center fontes-padrao">
-        <h1 class="text-center ">Box Logistic Soluções em Logistica</h1>
          <h1 class="text-center "> <b>Bem Vindo!</b></h1>
          <h2 class="text-center ">Uma ferramenta para integrar fabrica, motoristas e clientes. </h2>
      </div>
