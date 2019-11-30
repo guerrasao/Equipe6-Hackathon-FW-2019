@@ -91,7 +91,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?php echo $path;?>/perfis/operador/cadastro_entrega.operador.php" class="nav-link">
             <i class="fas fa-truck-loading"></i>
               <p>
                 Cadastro de Entregas
@@ -99,7 +99,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?php echo $path;?>/perfis/operador/cadastro_pedido.operador.php" class="nav-link">
             <i class="fas fa-boxes"></i>
               <p>
                 Cadastro de Pedidos
