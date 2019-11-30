@@ -18,7 +18,11 @@
         $resultado = inserir('usuario',$valores);
         echo $resultado;*/
         $query = mysqli_query($con1, "INSERT INTO usuario (id_usuario, id_tipo_usuario, id_endereco, nome, email, senha, cpf, cnpj, placa_do_veiculo,telefone) VALUES (null, 1, 1, '$nome', '$email', '$senha', '$cpf', null, '$placa', '$telefone')");
-        
+        if($query == true){
+            header('location:cadastro_motorista.operador.php?mensagem=usuario_cadastrado');
+        }else{
+            header('location:cadastro_motorista.operador.php?mensagem=erro');
+        }
     }
     if($tipo_usuario == 2){
         $nome = $_GET['nome'];
@@ -29,14 +33,15 @@
 
         $query = mysqli_query($con1, "INSERT INTO usuario (id_usuario, id_tipo_usuario, id_endereco, nome, email, senha, cpf, cnpj, placa_do_veiculo,
     telefone) VALUES (null, 2, 1, '$nome', '$email', '$senha', null, '$cnpj', null, '$telefone')");
+        if($query == true){
+            header('location:cadastro_cliente.operador.php?mensagem=usuario_cadastrado');
+        }else{
+            header('location:cadastro_cliente.operador.php?mensagem=erro');
+        }
     }
 
     
-    if($query == true){
-        header('location:cadastro_cliente.operador.php?mensagem=usuario_cadastrado');
-    }else{
-        header('location:cadastro_cliente.operador.php?mensagem=erro');
-    }
+    
     
     
 ?>
