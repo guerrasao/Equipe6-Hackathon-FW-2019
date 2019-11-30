@@ -37,7 +37,7 @@ include_once($cabecalho);
                 <form method="post" enctype="multipart/form-data" action="salva_pedido.motorista.php">
                     <div class="card-body">
                         <input type="hidden" name="tipo_usuario" value="2" />
-                        <input type="hidden" name="id_pedido" value="<? $_GET['id_pedido'];?>">
+                        <input type="hidden" name="id_pedido" value="<?php echo $_GET['id_pedido'];?>">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
