@@ -76,7 +76,7 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/gestor/cadastro_cliente.gestor.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class="fas fa-user-friends"></i>
               <p>
                 Cadastro de Cliente
               </p>
@@ -84,7 +84,7 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/gestor/cadastro_operador.gestor.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class="fas fa-tools"></i>
               <p>
                 Cadastro de Operador
               </p>
@@ -92,9 +92,25 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/gestor/cadastro_representante.gestor.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class="fas fa-piggy-bank"></i>
               <p>
                 Cadastro de Representante
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-flag-checkered"></i>
+              <p>
+                Relatório de Entregas
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-clipboard"></i>
+              <p>
+                Lista de Usuários
               </p>
             </a>
           </li>

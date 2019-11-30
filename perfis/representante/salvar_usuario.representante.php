@@ -14,7 +14,7 @@
         $senha = $_GET['senha'];
 
         $query = mysqli_query($con1, "INSERT INTO usuario (id_usuario, id_tipo_usuario, id_endereco, nome, email, senha, cpf, cnpj, placa_do_veiculo,
-        telefone) VALUES (null, 2, 1, '$nome', '$email', '$senha', null, '$cnpj', null, '$telefone')");
+        telefone) VALUES (null, 2, 0, '$nome', '$email', '$senha', null, '$cnpj', null, '$telefone')");
         if($query == true){
             header('location:cadastro_cliente.representante.php?mensagem=usuario_cadastrado');
         }else{
