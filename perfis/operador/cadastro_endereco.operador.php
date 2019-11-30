@@ -172,7 +172,7 @@ include_once($rodape);
                 document.body.appendChild(script);
 
                 // Chama funcao JS altera centralização do mapa
-                centralizaMapaPeloCep();
+                //centralizaMapaPeloCep();
             } //end if.
             else {
                 //cep é inválido.
@@ -279,7 +279,7 @@ include_once($rodape);
         document.getElementById('latitude').value = latLng.lat();
     }     
     window.onload = function(){
-        centralizaMapaPeloCep();
+        //centralizaMapaPeloCep();
         initialize();
     }
 </script>
