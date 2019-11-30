@@ -51,7 +51,22 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/Equipe6-Hackathon-FW-2019/BD/funcoes_
                                     </select>
                                 </div>
                             </div>
+                   
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    Selecionar Pedido: <select name="pedido" class="form-control">
+                                        <?php
+                                        $sql1 = "select * from pedido where id_pedido not in (select id_pedido from entrega);";
+                                        $resultado1 = consultarSQL($sql1);
+                                        while ($pedido = mysqli_fetch_assoc($resultado1)) {
+                                            echo '<option value="' . $pedido['id_pedido'] . '">' . $pedido['numero_nf'] . '</option>';
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
+
                     </div><!-- /.card-body -->
                     <div class="card-footer">
                         <input type="submit" class="btn btn-primary" value="Cadastrar" />
