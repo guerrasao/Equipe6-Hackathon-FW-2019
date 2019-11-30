@@ -24,7 +24,6 @@
     //$id_cliente = 
     $id_operador = $_SESSION['id_usuario'];  
     $query = mysqli_query($con1, "INSERT INTO pedido (id_pedido, id_endereco_inicial, id_endereco_final, id_cliente, id_operador, tipo_do_pedido, valor_total_pedido, numero_nf, data_pedido,hora_pedido) VALUES (null, $id_endereco_inicial, $id_endereco_final, $cliente, $id_operador, '$tipo_pedido', $valor, '$nota_fiscal', '$data', '$hora')");
-    var_dump($query);
     if($query == true){
         header('location:cadastro_pedido.operador.php?mensagem=pedido_cadastrado');
     }else{
