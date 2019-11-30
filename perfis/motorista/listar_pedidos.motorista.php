@@ -1,6 +1,6 @@
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019';
-$cabecalho = $path . '/cabecalho/cabecalho.operador.php';
+$cabecalho = $path . '/cabecalho/cabecalho.motorista.php';
 include_once($cabecalho);
 include_once $_SERVER['DOCUMENT_ROOT'] . "/Equipe6-Hackathon-FW-2019/BD/funcoes_iniciais.php";
 ?>
@@ -43,7 +43,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/Equipe6-Hackathon-FW-2019/BD/funcoes_
                                 if ($resultado != null) {
                                     while ($pedidos = mysqli_fetch_assoc($resultado)) {
                                         echo '<tr><td>' . $pedidos['id_pedido'] . '</td><td>' . $pedidos['numero_nf'] . '</td><td>' . $pedidos['tipo_do_pedido'] .
-                                         '</td><td>'.'<a href="'.$path.'/perfis/motorista/pedido.motorista.php?id_motorista='.$pedidos['id_pedido'].'" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Editar">
+                                         '</td><td>'.'<a href="'.$path.'/perfis/motorista/pedido.motorista.php?id_pedido='.$pedidos['id_pedido'].'" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Editar">
                                          <i class="fas fa-edit"></i>
                                      </a>'.'</td></tr>';
                                     }
