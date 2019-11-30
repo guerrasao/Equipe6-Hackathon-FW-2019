@@ -55,61 +55,6 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019/perfis/moto
 </div>
 <!-- /.content-wrapper -->
 
-<p id="demo">Clique no botão para receber sua localização em Latitude e Longitude:</p>
-<button onclick="getLocation()">Clique Aqui</button>
-
-<script>
-  var x=document.getElementById("demo");
-function getLocation()
-  {
-  if (navigator.geolocation)
-    {
-    navigator.geolocation.getCurrentPosition(showPosition);
-    }
-  else{x.innerHTML="O seu navegador não suporta Geolocalização.";}
-  }
-function showPosition(position)
-  {
-  x.innerHTML="Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;  
-  }
-
-  var sucesso = false;
-  var latitude = null;
-  var longitude = null;
-  var id_motorista = <?php echo $_SESSION['id_usuario']; ?>;
-
-  function verifica_se_cadastrado() {
-    if (sucesso == true) {
-      clearInterval(intervalo);
-    }
-  }
-
-  var intervalo = window.setInterval(envia_localizacao, 1000);
-
-  function envia_localizacao() {
-    if (sucesso == false) {
-      if (navigator.geolocation) {
-        var positions;
-        navigator.geolocation.getCurrentPosition(positions);
-        alert(positions.coords);
-        var latitude = positions.coords.latitude;
-        var longitude = positions.coords.longitude;
-        alert(latitude);
-        alert(longitude);
-        var resposta = false;
-        resposta = false;
-        if(resposta == true){
-          sucesso = true;
-          clearInterval(intervalo);
-        }
-      }
-    }else{
-      clearInterval(intervalo);
-    }
-  }
-</script>
-
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019';
 $rodape = $path . '/cabecalho/rodape.usuario.php';
