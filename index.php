@@ -8,14 +8,11 @@
 
 
 <section class="container center">
-    <div class="container">
     <div class=" jumbotron bg-white align-items-center fontes-padrao">
-          <h1 class="text-center ">Box Logic</h1>
-          <h2 class="text-center ">Soluções em Logistica</h2>
-            <h1 class="text-center "> <b>Bem Vindo!</b></h1>
-          <p class="text-center ">Uma ferramenta para ajuudar em sua logística e organizar </p>
-      </div>
-    </div>
+        <h1 class="text-center ">Box Logic Soluções em Logistica</h1>
+         <h1 class="text-center "> <b>Bem Vindo!</b></h1>
+         <h2 class="text-center ">Uma ferramenta para integrar fabrica, motoristas e clientes. </h2>
+     </div>
 </section>
 
 <section id="carouselExampleFade" class="carousel slide carousel-fade container" data-ride="carousel">

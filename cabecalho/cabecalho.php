@@ -20,16 +20,20 @@
 <body>
     <header>
         <nav id="menu" class="navbar navbar-expand-md cabecalho-box">
-          <div class="container">
+          <div class="container row">
             <!--Logo -->
             <a href="#" class="navbar-brand logo-menu row">
                 <img src="img/logobakof.png" width="150px" height="auto">
             </a>
-           
+          </div>
+          <div class="container row">
+          <h1 class="text-center ">Box Logic Soluções em Logistica</h1>
             <!-- Botão mostrar menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
               <span class="navbar-toggler-icon"></span>
             </button>
+          </div>
+          <div class="container row">
             <!-- Itens do menu -->
             <div id="links" class="collapse navbar-collapse justify-content-end row">
               <ul class="navbar-nav color-white ">
