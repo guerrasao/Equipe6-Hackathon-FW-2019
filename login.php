@@ -1,4 +1,5 @@
 <?php
+    session_start();
     //Cabecalho usuario não logado
     //Pegando o caminho absoluto à esse arquivo.
     $path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019/cabecalho/';
@@ -10,7 +11,7 @@
     <div class="cabecalho-box">
         <h3 class="mb-0">Acesso Restrito</h3>
     </div>
-    <form class="border p-4" action="" method="post">
+    <form class="border p-4" action="realiza_login.php" method="post">
         <div class="form-group">
         <label for="usuario">Login</label>
         <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Digite o usuário">

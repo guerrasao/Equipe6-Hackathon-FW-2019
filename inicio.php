@@ -1,15 +1,24 @@
 <?php
-    //Cabecalho usuario logado
-    //Pegando o caminho absoluto à esse arquivo.
-    $path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019/cabecalho/';
-    $cabecalho_logado = $path . 'cabecalho_usuario_logado.php';
-    include_once($cabecalho_logado);
-?>
 
-
-
-<?php
-    $rodape = $path . 'rodape.php';
-    include_once ($rodape);
-?>
-
+include_once "validacao.php";
+$tipoUsuario = $_SESSION['nome_tipo_usuario'];
+switch ($tipoUsuario) {
+    case "motorista":
+        header("Location:motorista/index.motorista.php");
+        break;
+    case "cliente":
+        header("Location:aluno/index.cliente.php");
+        break;
+    case "operador":
+        header("Location:operador/index.operador.php");
+        break;
+    case "gestor":
+        header("Location:gestor/index.gestor.php");
+        break;
+    case "representante":
+        header("Location:representante/index.representante.php");
+        break;
+    default:
+        header("Location:login.php");
+        break;
+}
