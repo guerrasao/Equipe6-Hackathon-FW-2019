@@ -27,7 +27,7 @@
             </a>
           </div>
           <div class="container row">
-          <h1 class="text-center ">Box Logic Soluções em Logistica</h1>
+          <h1 class="text-center page-text ">Box Logistic Soluções em Logistica</h1>
             <!-- Botão mostrar menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
               <span class="navbar-toggler-icon"></span>
