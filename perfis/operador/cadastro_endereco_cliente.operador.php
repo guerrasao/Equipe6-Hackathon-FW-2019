@@ -35,14 +35,14 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/Equipe6-Hackathon-FW-2019/BD/funcoes_
                             </thead>
                             <tbody>
                                 <?php
-                                $sql = "select id_usuario, nome, cnpj from usuario where id_tipo_usuario = 2 and id_endereco = 0";
+                                $sql = "select id_usuario, nome, cnpj from usuario where id_tipo_usuario = 2 and id_endereco = 1";
                                 $resultado = consultarSQL($sql);
                                 if ($resultado != null) {
                                     while ($cliente = mysqli_fetch_assoc($resultado)) {
                                         echo '<tr><td>' . $cliente['id_usuario'] . '</td><td>' . $cliente['nome'] . '</td><td>' . $cliente['cnpj'] .
-                                         '</td>'.'<a href="'.$path.'/perfis/operador/cadastro_endereco.operador.php?id_usuario='.$cliente['id_usuario'].'" class="btn btn-flat btn-sm btn-primary" data-toggle="tooltip" title="Editar">
-                                         <i class="fa fa-pencil"></i>
-                                     </a>'.'</tr>';
+                                         '</td><td>'.'<a href="'.$path.'/perfis/operador/cadastro_endereco.operador.php?id_usuario='.$cliente['id_usuario'].'" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Editar">
+                                         <i class="fas fa-edit"></i>
+                                     </a>'.'</td></tr>';
                                     }
                                 }
                                 ?>
