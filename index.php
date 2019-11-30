@@ -9,9 +9,9 @@
 
 <section>
     <div class="container">
-    <div class="row jumbotron bg-white align-items-center test">
+    <div class="row jumbotron bg-white align-items-center fontes-padrao">
         <div class="col-md-7 mr-5">
-            <h1 class="text-center"> <b>Bem Vindo!</b></h1>
+            <h1 class="text-center "> <b>Bem Vindo!</b></h1>
           <p class="text-justify">Faça o login no sistema para visualizar suas informações e funções</p>
         </div>
         <div class="col-md-4">

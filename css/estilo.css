@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
-
+.fontes-padrao{
+    font-family: Arial, Helvetica, Verdana, sans-serif !important;
+}
 .box{
     width: 33%;
 }
