@@ -22,15 +22,16 @@
         <nav id="menu" class="navbar navbar-expand-md cabecalho-box">
           <div class="container">
             <!--Logo -->
-            <a href="#" class="navbar-brand logo-menu">
+            <a href="#" class="navbar-brand logo-menu row">
                 <img src="img/logobakof.png" width="150px" height="auto">
             </a>
+           
             <!-- Botão mostrar menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
               <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Itens do menu -->
-            <div id="links" class="collapse navbar-collapse justify-content-end">
+            <div id="links" class="collapse navbar-collapse justify-content-end row">
               <ul class="navbar-nav color-white ">
                 <li class="nav-item">
                   <a href="index.php" class="nav-link" data-scroll> Início </a>

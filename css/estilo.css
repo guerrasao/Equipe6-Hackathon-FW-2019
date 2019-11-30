@@ -34,6 +34,12 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.page-text{
+    color: white;
+}
+.color-button{
+    background-color: #314B7F;
+}
 /* regras ativas para display menor que 1000px */
 @media(max-width: 1000px){
     .mr-5{
@@ -65,9 +71,17 @@
     }
     #links .nav-link:hover{
         background-color: #182540;
+        border-left: 3px solid #6397ff;
+        border-right: 3px solid #6397ff;
+        border-top: 3px solid #6397ff;
+        border-bottom: 3px solid #6397ff;
     }
     
     .md-100{
         height: 76vh;
+    }
+    #carouselExampleFade{
+        width: 50vw;
+        text-align: center;
     }
 }
