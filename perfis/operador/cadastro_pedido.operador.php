@@ -1,41 +1,113 @@
 <?php
-    //Cabecalho usuario não logado
-    //Pegando o caminho absoluto à esse arquivo.
-    $path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019/cabecalho/';
-    $cabecalho = $path . 'cabecalho.php';
-    include_once($cabecalho);
+$path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019';
+$cabecalho = $path . '/cabecalho/cabecalho.operador.php';
+include_once($cabecalho);
+include_once $_SERVER['DOCUMENT_ROOT'] . "/Equipe6-Hackathon-FW-2019/BD/funcoes_iniciais.php";
 ?>
 
-<section class="container p-3 col-md-3 mt-5 mb-5 md-100">
-    <div class="cabecalho-box">
-        <h3 class="mb-0">Cadastrar do Pedido</h3>
-    </div>
-    <form method="get" action="salvar_pedido.operador.php">
-        <?php
-            $sql = "SELECT * from usuario WHERE id_tipo_usuario = 2";
-        ?>
-        
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
 
-        <select name="cliente">
-        <select>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
-        Tipo do Pedido:
-        <input type="radio" name="tipo_pedido" value="entrega"> Entrega
-        <input type="radio" name="tipo_pedido" value="devolucao"> Devolução
-        Valor Total do Pedido: <input name="valor" type="number" required/>
-        Nota Fiscal: <input name="nota_fiscal" type="text" required/>
-        Data do Pedido: <input name="data" type="date" required/>
-        Hora do Pedido: <input name="hora" type="time" required/>
-        <br>
-        <input type="submit" value="Cadastrar"/>
-    </form>
-</section>
+    <!-- Main content -->
+    <section class="content pt-3">
+        <div class="container-fluid">
+            <?php
+            if (isset($_GET['mensagem'])) {
+                $mensagem = $_GET['mensagem'];
+                if ($mensagem == 'erro') {
+                    echo '<div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h5><i class="icon fas fa-ban"></i> Erro!</h5>
+            Ocorreu um erro no cadastro do pedido.
+          </div>';
+                } else {
+                    echo '<div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h5><i class="icon fas fa-check"></i> Sucesso!</h5>
+            Pedido cadastrado com sucesso.</div>';
+                }
+            }
+            ?>
+            <div class="card card-primary card-outline">
+                <div class="card-header">
+                    <h3 class="card-title">Cadastrar Pedido</h3>
+                </div> <!-- /.card-body -->
+                <form method="get" action="salvar_pedido.operador.php">
+                    <div class="card-body">
+                        <input type="hidden" name="tipo_usuario" value="2" />
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    Tipo do pedido:
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="tipo_pedido" value="entrega">
+                                                <div class="form-check-label">Entrega</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" name="tipo_pedido" value="devolucao">
+                                                <div class="form-check-label">Devolução</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                Valor Total do Pedido: <input name="valor" class="form-control" type="number" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                Nota Fiscal: <input name="nota_fiscal" class="form-control" type="text" required />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    Data do Pedido: <input name="data" class="form-control" type="date" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                Hora do Pedido: <input name="hora" class="form-control" type="time" required />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    Cliente: <select name="cliente" class="form-control">
+                                        <?php
+                                        $sql = "SELECT * from usuario WHERE id_tipo_usuario = 2";
+                                        $resultado = consultarSQL($sql);
+                                        while ($cliente = mysqli_fetch_assoc($resultado)) {
+                                            echo '<option value="' . $cliente['id_usuario'] . '">' . $cliente['nome'] . '</option>';
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.card-body -->
+                    <div class="card-footer">
+                        <input type="submit" class="btn btn-primary" value="Cadastrar" />
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
 
 <?php
-    $rodape = $path . 'rodape.php';
-    include_once ($rodape);
+$path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019';
+$rodape = $path . '/cabecalho/rodape.usuario.php';
+include_once($rodape);
 ?>
