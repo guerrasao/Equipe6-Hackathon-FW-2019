@@ -1,7 +1,6 @@
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019/';
-
-if(isset( $_FILES[ 'arquivo' ][ 'name' ])) {
+if($_FILES[ 'arquivo' ][ 'name' ][0] != '') {
     foreach ($_FILES['arquivo']['name'] as $key => $file) {
         if($_FILES[ 'arquivo' ][ 'error' ][$key] == 0){
             //$destino = $path.'imagens_entrega/' . $file;
@@ -19,7 +18,9 @@ if(isset( $_FILES[ 'arquivo' ][ 'name' ])) {
         }
         
     }
-    header('location:pedido.motorista.php');
+    header('location:pedido.motorista.php?mensagem=imagens_salvas');
+}else{
+    header('location:pedido.motorista.php?erro=n_selecionou_arquivos');
 }
 //header('location:pedido.motorista.php');
 /*$destino = $path.'imagens_entrega/' . $_FILES['arquivo']['name'];
