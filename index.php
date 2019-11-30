@@ -1,7 +1,7 @@
 <?php
     //Cabecalho usuario não logado
     //Pegando o caminho absoluto à esse arquivo.
-    $path = $_SERVER['DOCUMENT_ROOT'] . '/modelo/cabecalho/';
+    $path = $_SERVER['DOCUMENT_ROOT'] . '/Equipe6-Hackathon-FW-2019/cabecalho/';
     $cabecalho = $path . 'cabecalho.php';
     include_once($cabecalho);
 ?>
