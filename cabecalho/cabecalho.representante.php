@@ -76,9 +76,33 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/representante/cadastro_cliente.representante.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class="fas fa-user-friends"></i>
               <p>
                 Cadastro de Cliente
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-clipboard-list"></i>
+              <p>
+                Lista de Cliente
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-boxes"></i>
+              <p>
+                Lista de Pedidos
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-flag-checkered"></i>
+              <p>
+                Lista de Pedidos Entregues
               </p>
             </a>
           </li>

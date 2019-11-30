@@ -116,7 +116,7 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/operador/cadastro_endereco_cliente.operador.php" class="nav-link">
-            <i class="fas fa-flag-checkered"></i>
+            <i class="fas fa-map-marker-alt"></i>
               <p>
                 Cadastro de Endereço
               </p>

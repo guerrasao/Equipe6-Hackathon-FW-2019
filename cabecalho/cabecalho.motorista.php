@@ -76,7 +76,7 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/motorista/listar_pedidos.motorista.php" class="nav-link">
-            <i class="fas fa-list-alt"></i>
+            <i class="fas fa-boxes"></i>
               <p>
                 Listar Pedidos
               </p>
