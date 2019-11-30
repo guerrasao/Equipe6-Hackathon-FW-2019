@@ -76,7 +76,7 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/operador/cadastro_cliente.operador.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class="fas fa-user-friends"></i>
               <p>
                 Cadastro de Cliente
               </p>
@@ -84,9 +84,25 @@
           </li>
           <li class="nav-item">
             <a href="<?php echo $path;?>/perfis/operador/cadastro_motorista.operador.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class="fas fa-truck"></i>
               <p>
                 Cadastro de Motorista
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-truck-loading"></i>
+              <p>
+                Cadastro de Entregas
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-boxes"></i>
+              <p>
+                Cadastro de Pedidos
               </p>
             </a>
           </li>
