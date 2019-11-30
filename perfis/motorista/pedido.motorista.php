@@ -11,8 +11,8 @@
     <div class="cabecalho-box">
         <h3 class="mb-0">Pedido</h3>
     </div>
-    <form method="post" enctype="multipart/form-data">
-        Selecione uma imagem: <input name="arquivo" type="file" />
+    <form method="post" enctype="multipart/form-data" action="salva_pedido.motorista.php">
+        Selecione uma imagem: <input name="arquivo[]" id="filesToUpload" type="file" multiple=""/>
         <br/>
         <input type="submit" value="Salvar" />
     </form>
