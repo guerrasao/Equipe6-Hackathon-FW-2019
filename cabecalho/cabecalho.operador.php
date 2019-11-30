@@ -115,6 +115,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="<?php echo $path;?>/perfis/operador/cadastro_endereco.operador.php" class="nav-link">
+            <i class="fas fa-flag-checkered"></i>
+              <p>
+                Cadastro de Endereço
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="<?php echo $path;?>/sair.php" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
               <p>
