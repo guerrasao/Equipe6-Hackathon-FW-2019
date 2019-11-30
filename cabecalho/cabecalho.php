@@ -31,7 +31,7 @@
             </button>
             <!-- Itens do menu -->
             <div id="links" class="collapse navbar-collapse justify-content-end">
-              <ul class="navbar-nav color-white">
+              <ul class="navbar-nav color-white ">
                 <li class="nav-item">
                   <a href="index.php" class="nav-link" data-scroll> Início </a>
                 </li>
