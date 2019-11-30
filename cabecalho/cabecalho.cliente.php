@@ -75,10 +75,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo $path;?>/inicio.php" class="nav-link">
-              <i class="fas fa-home"></i></i>
+            <a href="#" class="nav-link">
+            <i class="fas fa-check-double"></i>
               <p>
-                Início
+                Assinatura da Entrega
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-boxes"></i>
+              <p>
+                Listar Pedidos
               </p>
             </a>
           </li>
