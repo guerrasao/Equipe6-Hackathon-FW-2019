@@ -27,3 +27,4 @@ MySQL Workbench Community Edition = 6.3.10
 ## Autores
 
 * **Patrick** - *Desenvolvedor* - [guerrasao](https://github.com/guerrasao)
+* **Adriano** - *Desenvolvedor/Desing* - [TheKingGuerra](https://github.com/TheKingGuerra)
